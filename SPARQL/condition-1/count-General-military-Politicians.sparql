@@ -1,0 +1,8 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (COUNT (DISTINCT ?item) AS ?count) WHERE{
+  ?item wdt:P106 wd:Q82955  ; # occupation of politician
+        wdt:P106 wd:Q189290 ; # occupation of milit. officer
+        wdt:P410 wd:Q83460  . # military rank of general
+}

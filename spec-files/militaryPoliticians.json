@@ -1,0 +1,47 @@
+{
+  "version": "1",
+  "labels": true,
+  "entities": [
+    {
+      "type": "item",
+      "properties": [
+        {
+          "type": "entityid",
+          "rank": "all",
+          "id": 1,
+          "value": "Q82955",
+          "property": "P106"
+        },
+        {
+          "type": "entityid",
+          "rank": "all",
+          "id": 3,
+          "value": "Q189290",
+          "property": "P106"
+        },
+        {
+          "type": "entityid",
+          "rank": "all",
+          "id": 4,
+          "value": "Q83460",
+          "property": "P410"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "meta": true,
+  "aliases": true,
+  "sitelinks": true,
+  "descriptions": true,
+  "statements": [
+    {
+      "qualifiers": false,
+      "id": 0,
+      "simple": true,
+      "rank": "all",
+      "full": false,
+      "references": false
+    }
+  ]
+}

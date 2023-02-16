@@ -1,0 +1,7 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (COUNT (DISTINCT ?item) AS ?count) WHERE{
+  ?item wdt:P31 wd:Q3918 ; # instance of university
+        wdt:P17 wd:Q145  . # country of United Kingdom
+}

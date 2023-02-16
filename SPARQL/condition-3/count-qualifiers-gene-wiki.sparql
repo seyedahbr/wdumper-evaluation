@@ -1,0 +1,13 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX p:    <http://www.wikidata.org/prop/>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (COUNT (DISTINCT ?qualifier) as ?count)
+WHERE{
+   wd:Q17487737 p:P680 ?statement.
+   ?statement ?property ?qualifier .
+   FILTER regex(str(?property), "http://www.wikidata.org/prop/qualifier/")
+}

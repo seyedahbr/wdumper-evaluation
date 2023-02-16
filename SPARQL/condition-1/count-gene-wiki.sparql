@@ -1,0 +1,38 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (COUNT (DISTINCT ?item) AS ?count) WHERE{
+  {?item wdt:P31 wd:Q423026 .}   # instance of active site
+  UNION
+  {?item wdt:P31 wd:Q4936952 .}  # instance of anat. struct.
+  UNION
+  {?item wdt:P31 wd:Q616005 .}
+  UNION
+  {?item wdt:P31 wd:Q4915012 .}
+  UNION
+  {?item wdt:P31 wd:Q11173 .}
+  UNION
+  {?item wdt:P31 wd:Q12136 .}
+  UNION
+  {?item wdt:P31 wd:Q7187 .}
+  UNION
+  {?item wdt:P31 wd:Q12140 .}
+  UNION
+  {?item wdt:P31 wd:Q28885102 .}
+  UNION
+  {?item wdt:P31 wd:Q50377224 .}
+  UNION
+  {?item wdt:P31 wd:Q898273 .}
+  UNION
+  {?item wdt:P31 wd:Q417841 .}
+  UNION
+  {?item wdt:P31 wd:Q8054 .}
+  UNION
+  {?item wdt:P31 wd:Q215980 .}
+  UNION
+  {?item wdt:P31 wd:Q15304597 .}
+  UNION
+  {?item wdt:P31 wd:Q7644128 .}
+  UNION
+  {?item wdt:P31 wd:Q50379781 .} # instance of therap. use
+}

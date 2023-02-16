@@ -1,0 +1,12 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX p:    <http://www.wikidata.org/prop/>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (COUNT (DISTINCT ?reference) as ?count)
+WHERE{
+   wd:Q1094046 p:P355 ?statement.
+   ?statement prov:wasDerivedFrom ?reference .
+}
